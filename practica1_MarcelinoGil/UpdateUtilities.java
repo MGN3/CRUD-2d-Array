@@ -29,22 +29,6 @@ public class UpdateUtilities {
 		}
 	}
 
-	public static void updateField(String[][] arrayString) {
-		int selectedRow;
-		int selectedCol;
-		// methor getIntBetween is in charge of setting the parameters, in this case,
-		// the valid rows to be modified go from 1 to String[][] length, both included.
-		selectedRow = Utilities.getIntBetween(1, arrayString.length, "Enter the row");
-		selectedRow -= 1;// -1 to match the array positions.
-		selectedCol = Utilities.getIntBetween(1, arrayString[selectedRow].length, "Enter the column/field.");
-		selectedCol -= 1;
-
-		arrayString[selectedRow][selectedCol] = Utilities
-				.getString("Enter the value for column '" + (selectedCol + 1) + "'");
-	}
-
-	
-
 	/**
 	 * <ul>
 	 * <li>This method receives a two-dimensional array of Strings and String data
@@ -110,4 +94,26 @@ public class UpdateUtilities {
 		System.out.println('\n');
 	}
 
+	/**
+	 * <ul>
+	 * <li>This method calls the function getIntBetween so user can update the data
+	 * of a specific field.
+	 * </ul>
+	 * 
+	 * @param arrayString
+	 */
+	public static void updateField(String[][] arrayString) {
+		int selectedRow;
+		int selectedCol;
+		// method getIntBetween is in charge of setting the parameters, in this case,
+		// the valid rows to be modified go from 1 to String[][] length, both included.
+		selectedRow = Utilities.getIntBetween(1, arrayString.length, "Enter the row");
+		selectedRow -= 1;// -1 to match the array positions.
+		selectedCol = Utilities.getIntBetween(1, arrayString[selectedRow].length, "Enter the column/field.");
+		selectedCol -= 1;
+
+		arrayString[selectedRow][selectedCol] = Utilities
+				.getString("Enter the value for column '" + (selectedCol + 1) + "'");
+	}
+	
 }
