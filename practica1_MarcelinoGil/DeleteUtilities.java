@@ -187,7 +187,7 @@ public class DeleteUtilities {
 	public static void deleteField(String[][] arrayString) {
 		int selectedRow;
 		int selectedCol;
-		// methor getIntBetween is in charge of setting the parameters, in this case,
+		// method getIntBetween is in charge of setting the parameters, in this case,
 		// the valid rows to be modified go from 1 to String[][] length, both included.
 		selectedRow = Utilities.getIntBetween(1, arrayString.length, "Enter the row");
 		selectedRow -= 1;// -1 to match the array positions.
