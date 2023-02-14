@@ -176,4 +176,25 @@ public class DeleteUtilities {
 		System.out.println('\n');
 	}
 
+	/**
+	 * <ul>
+	 * <li>This method calls the function getIntBetween so user can set null the
+	 * specific field inside a row.
+	 * </ul>
+	 * 
+	 * @param arrayString
+	 */
+	public static void deleteField(String[][] arrayString) {
+		int selectedRow;
+		int selectedCol;
+		// methor getIntBetween is in charge of setting the parameters, in this case,
+		// the valid rows to be modified go from 1 to String[][] length, both included.
+		selectedRow = Utilities.getIntBetween(1, arrayString.length, "Enter the row");
+		selectedRow -= 1;// -1 to match the array positions.
+		selectedCol = Utilities.getIntBetween(1, arrayString[selectedRow].length, "Enter the column/field.");
+		selectedCol -= 1;
+
+		arrayString[selectedRow][selectedCol] = null;
+	}
+
 }
