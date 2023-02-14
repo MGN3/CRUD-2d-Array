@@ -1,2 +1,2 @@
 # CRUD-2d-Array
-A two dimensional array of Strings and functionalities to create, read, update and delete data.
+Functions that create, read, update and delete data inside a two dimensional array of Strings.
