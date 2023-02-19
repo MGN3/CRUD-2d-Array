@@ -91,19 +91,6 @@ public class CreateUtilities {
 		// columns empty.
 	}
 
-	/**
-	 * <ul>
-	 * <li>This method will ask user to fill the entire twodimensional array of
-	 * Strings.
-	 * <li>First for loop will iterate through every row and set the value for
-	 * columnsLength for the next loop .
-	 * <li>The second for loop will ask user to fill every column of the row with
-	 * data.
-	 * <li>the function ends once the entire array has been filled.
-	 * </ul>
-	 * 
-	 * @param arrayString The 2d array that is going to be modified.
-	 */
 
 	/**
 	 * <ul>
@@ -152,9 +139,13 @@ public class CreateUtilities {
 
 	/**
 	 * <ul>
-	 * <li>The purpose is to overwrite every field in the table.
-	 * <li>Two for loops will be in charge of iterate through every column and user
-	 * will have to enter data.
+	 * <li>This method will ask user to fill the entire twodimensional array of
+	 * Strings.
+	 * <li>First for loop will iterate through every row and set the value for
+	 * columnsLength for the next loop .
+	 * <li>The second for loop will ask user to fill every column of the row with
+	 * data.
+	 * <li>the function ends once the entire array has been filled.
 	 * </ul>
 	 * 
 	 * @param arrayString The 2d array that is going to be modified.
